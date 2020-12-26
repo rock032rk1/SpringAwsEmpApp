@@ -25,7 +25,7 @@
 	<!-- Step 1: Define Database DataSource / connection pool -->
 	 <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
-       <!--  <property name="driverClass" value="com.mysql.jdbc.Driver" /> -->
+        <property name="driverClass" value="com.mysql.jdbc.Driver" />
         <property name="jdbcUrl" value="jdbc:mysql://emplyee-db.c5gfh7zgoi06.ap-south-1.rds.amazonaws.com:3306/employee?useSSL=false&amp;serverTimezone=UTC" />
         <property name="user" value="root" />
         <property name="password" value="Password" /> 
