@@ -46,19 +46,23 @@ public class EmployeeDaoImpl implements EmployeeDao{
 		
 		List<Employee> elist=query.getResultList();
 		
-		if(elist!=null) 
-		{
-			
-			Employee e1=elist.stream()
-					.filter(emp->email.equals(emp.getEmail()))
-					.findAny()
-					.orElse(null);
-			return e1;
-		}
-		else 
-		{
-			return null;
-		}
+		Employee e1=null;
+		
+//		if(elist!=null) 
+//		{
+//			
+//			Employee e1=elist.stream()
+//					.filter(emp->email.equals(emp.getEmail()))
+//					.findAny()
+//					.orElse(null);
+//			return e1;
+//		}
+//		else 
+//		{
+//			return null;
+//		}
+		
+		return e1;
 	
 	}
 
